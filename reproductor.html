@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Reproductor</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap5/css/bootstrap.min.css">
+	<script src="https://kit.fontawesome.com/0f25780317.js"	 crossoeigin="anonymous"></script>
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.audioControls.min.js"></script>
+
+	<script src="js/funciones.js"></script>
+	<style type="text/css">
+		body{
+			background: #0D1940;
+		}
+
+		.botoncabecera{
+			background-color: #A60303;
+			color: white;
+			border-radius: 10px;
+		}
+
+		.col{
+			color: white;
+		}
+
+
+	</style>
+
+</head>
+<body>
+	<div class="container">
+		<div class="row justify-content-between">
+			<div class="col-auto botoncabecera">
+				<div class="botones"><i class="fa-regular fa-circle-left"></i></div>
+			</div>
+			<div class="col-auto botoncabecera">
+				<p class="d-none d-md-block">reproducir ahora</p>
+				<p class="d-block d-md-none">ahora</p>
+			</div>
+			<div class="col-auto botoncabecera">
+				<div><i class="fa-solid fa-bars"></i></div>
+			</div>
+		</div>
+
+		<div class="row text-center">
+			<div class="col">
+				<img src="Bandas Musicales.jfif" width="150px" class="rounded-circle">
+			</div>
+		</div>
+
+		<div class="row text-center">
+			<div class="col">
+				<span class="col-3  nombremp3"></span>
+			</div>
+		</div>
+		<div class="row justify-content-end">
+		
+		<span class="col-3 text-white text-end  audioTime" data-attr="timer"></span>
+	</div>
+
+	<div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+  		<div class="progress-bar updateProgress"></div>
+	</div>
+
+		<ul class="list-group mt-5 playlist">
+	  <li class="list-group-item" data-src="audios/System Of A Down - B.Y.O.B. (Official HD Video).mp3"><a href="#">System Of A Down - B.Y.O.B.</a></li>
+
+	  <li class="list-group-item" data-src="audios/System Of A Down - Chop Suey! (Official HD Video).mp3"><a href="#">System Of A Down - Chop Suey!</a></li>
+
+	  <li class="list-group-item" data-src="audios/System Of A Down - Hypnotize (Official HD Video).mp3"><a href="#">System Of A Down - Hypnotize</a></li>
+
+	  <li class="list-group-item" data-src="audios/System Of A Down - Lonely Day (Official HD Video).mp3"><a href="#">System Of A Down - Lonely Day</a></li>
+
+	  <li class="list-group-item" data-src="audios/System Of A Down - Sugar (Official HD Video).mp3"> <a href="#">System Of A Down - Sugar</a></li>
+
+	</ul>
+
+</div>
+</body>
+</html>
